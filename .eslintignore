@@ -1,0 +1,9 @@
+packages
+build
+deploy
+.husky
+node_modules
+/public
+coverage
+postcss.config.js
+tailwind.config.js

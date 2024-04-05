@@ -1,0 +1,118 @@
+{
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:import/recommended",
+    "plugin:react/recommended",
+  ],
+  "rules": {
+    "@typescript-eslint/dot-notation": "off",
+    "@typescript-eslint/naming-convention": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "class-methods-use-this": "off",
+    "default-case": "error",
+    "default-case-last": "error",
+    "eol-last": 2,
+    "guard-for-in": "error",
+    "max-len": 0,
+    "import/no-unresolved": [2, { "caseSensitive": false }],
+    "import/prefer-default-export": "off",
+    "lines-between-class-members": ["error", "always"],
+    "no-await-in-loop": "off",
+    "no-cond-assign": ["error", "always"],
+    "no-console": [
+      "error",
+      {
+        "allow": ["error", "warn"]
+      }
+    ],
+    "no-duplicate-case": "error",
+    "no-duplicate-imports": [
+      "error",
+      {
+        "includeExports": false
+      }
+    ],
+    "no-else-return": "error",
+    "no-nested-ternary": "error",
+    "no-plusplus": "off",
+    "no-promise-executor-return": "error",
+    "no-restricted-syntax": "off",
+    "no-shadow": "off",
+    "no-unneeded-ternary": [
+      "error",
+      {
+        "defaultAssignment": true
+      }
+    ],
+    "no-underscore-dangle": 0,
+    "no-restricted-exports": 0,
+    "one-var-declaration-per-line": "error",
+    "radix": "off",
+    "react/destructuring-assignment": "off",
+    "react/function-component-definition": [
+      2,
+      { "namedComponents": "arrow-function" }
+    ],
+    "react/jsx-props-no-spreading": 0,
+    "react/jsx-one-expression-per-line": [
+      1,
+      {
+        "allow": "single-child"
+      }
+    ],
+    "react/no-array-index-key": "warn",
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/require-default-props": "off",
+    "react/sort-comp": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
+    "sort-imports": [
+      "error",
+      {
+        "allowSeparatedGroups": true,
+        "ignoreCase": true,
+        "ignoreDeclarationSort": true,
+        "ignoreMemberSort": false
+      }
+    ],
+    "yoda": [
+      "error",
+      "never",
+      {
+        "exceptRange": true
+      }
+    ],
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-static-element-interactions": 0
+  },
+  "settings": {
+    "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      },
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": "**/tsconfig.json"
+      }
+    }
+  }
+}
